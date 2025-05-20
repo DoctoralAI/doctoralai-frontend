@@ -1,8 +1,9 @@
 // components/Navbar.tsx
 import Link from "next/link";
+const Navbar = () => {
 
-export const Navbar = () => {
-  return (
+
+	return (
     <nav className="flex items-center justify-between px-6 py-4 shadow-md bg-white">
       <div className="text-2xl font-bold">DoctoralAI</div>
       <div className="space-x-6">
@@ -14,4 +15,7 @@ export const Navbar = () => {
     </nav>
   );
 };
+
+export default Navbar;
+
 
