@@ -45,5 +45,18 @@ export async function POST(request: Request) {
     message: "Mocked suggestions based on your input",
     data: matched.length > 0 ? matched : suggestions.slice(0, 2),
   });
+
+    const message = `
+Hi ${alias},
+
+Based on your interest in **${field}**, especially in the area of **${subtopic}** under the **${department}** department, and your preference for ${workType.toLowerCase()} research at a university ranked in the **${prestige}** range, we will soon be able to recommend top supervisors and programs that align with your goals.
+
+Stay tuned as we build out the database and AI assistant to give you detailed guidance!
+
+– DoctoralAI
+  `.trim();
+
+  return NextResponse.json({ message });
+
 }
 
