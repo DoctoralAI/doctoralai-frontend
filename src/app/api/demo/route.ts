@@ -6,11 +6,11 @@ export async function POST(request: Request) {
   const { field, prestige, department, subtopic, workType } = data;
 
 // Log or process the form data
-  console.log("Form submitted:", body);
+//  console.log("Form submitted:", body);
 
   // You can later add logic here to query LLM, DB, etc.
-  return NextResponse.json({ success: true, message: "Form received", data: body });
-}
+  //return NextResponse.json({ success: true, message: "Form received", data: body });
+//}
 
   // Simple mock logic for demo purposes
   const suggestions = [
