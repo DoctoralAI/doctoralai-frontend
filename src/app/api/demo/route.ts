@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 export async function POST(request: Request) {
   const data = await request.json();
 
-  const { field, prestige, department, subtopic, workType } = data;
+  const { alias ,field, prestige, department, subtopic, workType } = data;
 
 // Log or process the form data
 //  console.log("Form submitted:", body);
