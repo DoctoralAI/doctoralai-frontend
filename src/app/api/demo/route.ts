@@ -14,7 +14,79 @@ export async function POST(request: Request) {
 
   // Simple mock logic for demo purposes
   const suggestions = [
-    {
+  {
+    name: "Dr. Jane Smith",
+    university: "MIT",
+    rank: "Top 100",
+    department: "Physics",
+    field: "Astrophysics",
+    subtopics: ["Exoplanets", "Stellar Astrophysics"],
+    workTypes: ["Observational", "Computational"]
+  },
+  {
+    name: "Dr. Carlos Rivera",
+    university: "University of Toronto",
+    rank: "Top 100",
+    department: "Astronomy",
+    field: "Astrophysics",
+    subtopics: ["RR Lyrae", "Cepheids"],
+    workTypes: ["Observational"]
+  },
+  {
+    name: "Dr. Akiko Tanaka",
+    university: "Kyoto University",
+    rank: "100-250",
+    department: "Engineering",
+    field: "AI/ML",
+    subtopics: ["Reinforcement Learning"],
+    workTypes: ["Computational"]
+  },
+  {
+    name: "Dr. Jane Liu",
+    university: "MIT",
+    ranking: "Top 100",
+    department: "Physics",
+    topics: ["Exoplanets", "Hot Jupiters"],
+    workType: ["Observational", "Computational"],
+    website: "https://physics.mit.edu/faculty/jane-liu/",
+  },
+  {
+    name: "Dr. Carlos Fernandez",
+    university: "University of Toronto",
+    ranking: "Top 100",
+    department: "Astronomy",
+    topics: ["Stellar Astrophysics", "RR Lyrae"],
+    workType: ["Theoretical", "Observational"],
+    website: "https://astro.utoronto.ca/people/fernandez/",
+  },
+  {
+    name: "Dr. Meera Patel",
+    university: "University of Delhi",
+    ranking: "500-1000",
+    department: "Physics",
+    topics: ["Cepheids", "Exoplanets"],
+    workType: ["Computational"],
+    website: "https://du.ac.in/faculty/meera-patel",
+  },
+  {
+    name: "Dr. Tomoko Tanaka",
+    university: "Kyoto University",
+    ranking: "100-250",
+    department: "Astronomy",
+    topics: ["Hot Jupiters", "RR Lyrae"],
+    workType: ["Observational"],
+    website: "https://www.astronomy.kyoto-u.ac.jp/tanaka",
+  },
+  {
+    name: "Dr. Alan Green",
+    university: "University of Cape Town",
+    ranking: "250-500",
+    department: "Engineering",
+    topics: ["Exoplanets"],
+    workType: ["Experimental", "Computational"],
+    website: "https://uct.ac.za/faculty/alan-green",
+  },
+  {
       university: "MIT",
       department: "Physics",
       supervisor: "Dr. Jane Quantum",
